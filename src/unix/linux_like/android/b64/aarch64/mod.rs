@@ -347,6 +347,7 @@ pub const SYS_request_key: ::c_long = 218;
 pub const SYS_keyctl: ::c_long = 219;
 pub const SYS_clone: ::c_long = 220;
 pub const SYS_execve: ::c_long = 221;
+pub const SYS_mmap: ::c_long = 222;
 pub const SYS_swapon: ::c_long = 224;
 pub const SYS_swapoff: ::c_long = 225;
 pub const SYS_mprotect: ::c_long = 226;

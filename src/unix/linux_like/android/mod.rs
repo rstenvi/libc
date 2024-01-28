@@ -3100,6 +3100,12 @@ pub const PF_VSOCK: ::c_int = AF_VSOCK;
 
 pub const SOMAXCONN: ::c_int = 128;
 
+pub const PR_GET_DUMPABLE: ::c_int = 3;
+pub const PR_SET_DUMPABLE: ::c_int = 4;
+pub const PR_SET_NAME: ::c_int = 15;
+pub const PR_GET_NAME: ::c_int = 16;
+
+
 // sys/prctl.h
 pub const PR_SET_PDEATHSIG: ::c_int = 1;
 pub const PR_GET_PDEATHSIG: ::c_int = 2;
