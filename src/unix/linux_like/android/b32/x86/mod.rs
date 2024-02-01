@@ -26,6 +26,25 @@ s! {
         pub oldmask: ::c_ulong,
         pub cr2: ::c_ulong,
     }
+	pub struct user_regs_struct {
+        pub ebx: ::c_long,
+        pub ecx: ::c_long,
+        pub edx: ::c_long,
+        pub esi: ::c_long,
+        pub edi: ::c_long,
+        pub ebp: ::c_long,
+        pub eax: ::c_long,
+        pub xds: ::c_long,
+        pub xes: ::c_long,
+        pub xfs: ::c_long,
+        pub xgs: ::c_long,
+        pub orig_eax: ::c_long,
+        pub eip: ::c_long,
+        pub xcs: ::c_long,
+        pub eflags: ::c_long,
+        pub esp: ::c_long,
+        pub xss: ::c_long,
+    }
 }
 
 cfg_if! {
