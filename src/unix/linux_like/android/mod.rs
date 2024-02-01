@@ -3054,6 +3054,13 @@ pub const PRIO_PROCESS: ::c_int = 0;
 pub const PRIO_PGRP: ::c_int = 1;
 pub const PRIO_USER: ::c_int = 2;
 
+// elf.h
+pub const NT_PRSTATUS: ::c_int = 1;
+pub const NT_PRFPREG: ::c_int = 2;
+pub const NT_PRPSINFO: ::c_int = 3;
+pub const NT_TASKSTRUCT: ::c_int = 4;
+pub const NT_AUXV: ::c_int = 6;
+
 // linux/sched.h
 pub const SCHED_NORMAL: ::c_int = 0;
 pub const SCHED_FIFO: ::c_int = 1;
