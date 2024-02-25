@@ -46,6 +46,27 @@ s! {
         pub st_ino: ::ino_t,
     }
 
+    pub struct user_regs {
+        pub arm_r0: ::c_ulong,
+        pub arm_r1: ::c_ulong,
+        pub arm_r2: ::c_ulong,
+        pub arm_r3: ::c_ulong,
+        pub arm_r4: ::c_ulong,
+        pub arm_r5: ::c_ulong,
+        pub arm_r6: ::c_ulong,
+        pub arm_r7: ::c_ulong,
+        pub arm_r8: ::c_ulong,
+        pub arm_r9: ::c_ulong,
+        pub arm_r10: ::c_ulong,
+        pub arm_fp: ::c_ulong,
+        pub arm_ip: ::c_ulong,
+        pub arm_sp: ::c_ulong,
+        pub arm_lr: ::c_ulong,
+        pub arm_pc: ::c_ulong,
+        pub arm_cpsr: ::c_ulong,
+        pub arm_orig_r0: ::c_ulong,
+    }
+
     pub struct stack_t {
         pub ss_sp: *mut ::c_void,
         pub ss_flags: ::c_int,
