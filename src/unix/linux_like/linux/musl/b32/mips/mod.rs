@@ -48,6 +48,16 @@ s! {
         __st_padding4: [::c_long; 14],
     }
 
+    pub struct user_regs_struct {
+        regs: [u64; 32],
+        lo: u64,
+        hi: u64,
+        cp0_epc: u64,
+        cp0_badvaddr: u64,
+        cp0_status: u64,
+        cp0_cause: u64,
+    }
+
     pub struct stack_t {
         pub ss_sp: *mut ::c_void,
         pub ss_size: ::size_t,

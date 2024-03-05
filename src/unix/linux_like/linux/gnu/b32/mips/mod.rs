@@ -40,6 +40,16 @@ s! {
         f_spare: [::c_long; 6],
     }
 
+    pub struct user_regs_struct {
+        regs: [u64; 32],
+        lo: u64,
+        hi: u64,
+        cp0_epc: u64,
+        cp0_badvaddr: u64,
+        cp0_status: u64,
+        cp0_cause: u64,
+    }
+
     pub struct statfs64 {
         pub f_type: ::c_long,
         pub f_bsize: ::c_long,
